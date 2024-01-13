@@ -1,10 +1,10 @@
 class Message {
-  final String text;
-  final KeyPair keyPair;
+  final String text; // The text of the message
+  final KeyPair keyPair; // The key pair associated with the message
 
   Message({
-    required this.text,
-    required this.keyPair,
+    required this.text, // The text of the message
+    required this.keyPair, // The key pair associated with the message
   });
 
   Map<String, dynamic> toJson() => {
@@ -19,12 +19,12 @@ class Message {
 }
 
 class KeyPair {
-  final String u1SharedSecretKey;
-  final String u2SharedSecretKey;
+  final String u1SharedSecretKey; // The shared secret key for user 1
+  final String u2SharedSecretKey; // The shared secret key for user 2
 
   KeyPair({
-    required this.u1SharedSecretKey,
-    required this.u2SharedSecretKey,
+    required this.u1SharedSecretKey, // The shared secret key for user 1
+    required this.u2SharedSecretKey, // The shared secret key for user 2
   });
 
   Map<String, dynamic> toJson() => {

@@ -1,6 +1,6 @@
 # r2f_x3dh_e2e
 
-r2f_x3dh_e2e is a Rust to Flutter library that provides end-to-end encryption capabilities using the X3DH (Extended Triple Diffie-Hellman) protocol. It enables secure communication between parties by establishing shared secret keys and encrypting data using these keys.
+r2f_x3dh_e2e is a Rust to Flutter library enabling end-to-end encryption using the X3DH protocol, establishing shared secret keys for secure communication.
 
 ## Motivation
 
@@ -65,7 +65,7 @@ To use r2f_x3dh_e2e in your Flutter project, follow these steps:
 1. Add the library as a dependency in your `pubspec.yaml` file:
     ```yaml
     dependencies:
-      r2f_x3dh_e2e: ^0.0.1
+      r2f_x3dh_e2e: ^0.0.2
     ```
 
 2. Import the library in your Dart code:

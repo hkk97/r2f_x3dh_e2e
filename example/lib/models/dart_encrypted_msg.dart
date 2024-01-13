@@ -1,13 +1,13 @@
 import 'package:r2f_x3dh_e2e/models.dart';
 
 class UniDartEncryptedMsg extends DartEncryptedMsg {
-  final X3DHKey x3dhKey;
+  final X3DHKey x3dhKey; // The X3DHKey associated with the encrypted message
 
   UniDartEncryptedMsg({
-    required super.ciphertext,
-    required super.iv,
-    required super.mac,
-    required this.x3dhKey,
+    required super.ciphertext, // The encrypted message's ciphertext inherited from DartEncryptedMsg
+    required super.iv, // The initialization vector inherited from DartEncryptedMsg
+    required super.mac, // The message authentication code inherited from DartEncryptedMsg
+    required this.x3dhKey, // The X3DHKey associated with the encrypted message
   });
 
   @override
@@ -27,14 +27,14 @@ class UniDartEncryptedMsg extends DartEncryptedMsg {
 }
 
 class DartEncryptedMsg {
-  final List<int> ciphertext;
-  final List<int> iv;
-  final List<int> mac;
+  final List<int> ciphertext; // The encrypted message's ciphertext
+  final List<int> iv; // The initialization vector
+  final List<int> mac; // The message authentication code
 
   DartEncryptedMsg({
-    required this.ciphertext,
-    required this.iv,
-    required this.mac,
+    required this.ciphertext, // The encrypted message's ciphertext
+    required this.iv, // The initialization vector
+    required this.mac, // The message authentication code
   });
 
   Map<String, dynamic> toJson() => {

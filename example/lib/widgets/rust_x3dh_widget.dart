@@ -4,22 +4,23 @@ import 'package:example/enum/enum.dart';
 import 'package:r2f_x3dh_e2e/models.dart';
 import 'package:example/models/message.dart';
 import 'package:r2f_x3dh_e2e/r2f_x3dh_e2e.dart';
+import 'package:example/decrypted_text_widget.dart';
 import 'package:smooth_list_view/smooth_list_view.dart';
 import 'package:example/models/testing_result_status.dart';
-import 'package:example/widgets/decrypted_rust_text_widget.dart';
 
 class RustX3dhWidget extends StatefulWidget {
   final List<Message> messages;
-  const RustX3dhWidget({super.key, required this.messages});
+  const RustX3dhWidget({Key? key, required this.messages}) : super(key: key);
 
   @override
   State<RustX3dhWidget> createState() => RustX3dhWidgetState();
 }
 
 class RustX3dhWidgetState extends State<RustX3dhWidget> {
-  late ScrollController _scrollContlr;
-  late List<UniEncryptedMsg> _encryptedMsgs;
-  late ValueNotifier<TestinStatus> _testStatusNotifi;
+  late ScrollController _scrollContlr; // Scroll controller for ListView
+  late List<UniEncryptedMsg> _encryptedMsgs; // List to store encrypted messages
+  late ValueNotifier<TestinStatus>
+      _testStatusNotifi; // Notifier for testing status
 
   @override
   void initState() {
@@ -33,8 +34,8 @@ class RustX3dhWidgetState extends State<RustX3dhWidget> {
 
   @override
   void dispose() {
-    _scrollContlr.dispose();
-    _testStatusNotifi.dispose();
+    _scrollContlr.dispose(); // Dispose the scroll controller
+    _testStatusNotifi.dispose(); // Dispose the test status notifier
     super.dispose();
   }
 
@@ -47,7 +48,7 @@ class RustX3dhWidgetState extends State<RustX3dhWidget> {
         x3DHKey: msg.keyPair.u1SharedSecretKey,
         data: msg.text,
       );
-      _encryptedMsgs.add(dartEncryptedMsg);
+      _encryptedMsgs.add(dartEncryptedMsg); // Add encrypted message to the list
     }
   }
 
@@ -77,9 +78,9 @@ class RustX3dhWidgetState extends State<RustX3dhWidget> {
                         itemCount: _encryptedMsgs.length,
                         addAutomaticKeepAlives: true,
                         itemBuilder: (context, index) {
-                          return DecryptedRustTextWidget(
+                          return DecryptedTextWidget(
                             index: index + 1,
-                            dartEncryptedMsg: _encryptedMsgs[index],
+                            encryptedMsg: _encryptedMsgs[index],
                           );
                         },
                       ),

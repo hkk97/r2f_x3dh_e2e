@@ -2,11 +2,11 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:example/enum/enum.dart';
 import 'package:example/models/message.dart';
+import 'package:example/decrypted_text_widget.dart';
 import 'package:smooth_list_view/smooth_list_view.dart';
 import 'package:example/models/dart_encrypted_msg.dart';
 import 'package:example/services/dart_x3dh_e2e_ser.dart';
 import 'package:example/models/testing_result_status.dart';
-import 'package:example/widgets/decrypted_dart_text_widget.dart';
 
 class DartX3dhWidget extends StatefulWidget {
   final List<Message> messages;
@@ -17,24 +17,28 @@ class DartX3dhWidget extends StatefulWidget {
 }
 
 class DartX3dhWidgetState extends State<DartX3dhWidget> {
-  late ScrollController _scrollContlr;
-  late List<UniDartEncryptedMsg> _encryptedMsgs;
-  late ValueNotifier<TestinStatus> _testStatusNotifi;
+  late ScrollController
+      _scrollContlr; // Scroll controller for managing scrolling behavior
+  late List<UniDartEncryptedMsg>
+      _encryptedMsgs; // List to store encrypted messages
+  late ValueNotifier<TestinStatus>
+      _testStatusNotifi; // Notifier for testing status
 
   @override
   void initState() {
     _testStatusNotifi = ValueNotifier(
+      // Initializing test status notifier
       TestinStatus(testStatus: TestStatus.idle),
     );
-    _scrollContlr = ScrollController();
-    _encryptedMsgs = [];
+    _scrollContlr = ScrollController(); // Initializing scroll controller
+    _encryptedMsgs = []; // Initializing encrypted messages list
     super.initState();
   }
 
   @override
   void dispose() {
-    _scrollContlr.dispose();
-    _testStatusNotifi.dispose();
+    _scrollContlr.dispose(); // Disposing of scroll controller
+    _testStatusNotifi.dispose(); // Disposing of test status notifier
     super.dispose();
   }
 
@@ -76,9 +80,10 @@ class DartX3dhWidgetState extends State<DartX3dhWidget> {
                         itemCount: _encryptedMsgs.length,
                         addAutomaticKeepAlives: true,
                         itemBuilder: (context, index) {
-                          return DecryptedDartTextWidget(
+                          return DecryptedTextWidget(
                             index: index + 1,
-                            dartEncryptedMsg: _encryptedMsgs[index],
+                            isRust: false,
+                            encryptedMsg: _encryptedMsgs[index],
                           );
                         },
                       ),
