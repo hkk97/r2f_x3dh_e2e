@@ -32,19 +32,96 @@ flutter_rust_bridge::frb_generated_default_handler!();
 
 // Section: wire_funcs
 
-fn wire_greet_impl(
-    name: impl CstDecode<String>,
+fn wire_decrypt_with_bytes_key_impl(
+    shared_secret_key: impl CstDecode<Vec<u8>>,
+    ciphertext: impl CstDecode<Vec<u8>>,
+    iv: impl CstDecode<Vec<u8>>,
 ) -> flutter_rust_bridge::for_generated::WireSyncRust2DartDco {
     FLUTTER_RUST_BRIDGE_HANDLER.wrap_sync::<flutter_rust_bridge::for_generated::DcoCodec, _>(
         flutter_rust_bridge::for_generated::TaskInfo {
-            debug_name: "greet",
+            debug_name: "decrypt_with_bytes_key",
             port: None,
             mode: flutter_rust_bridge::for_generated::FfiCallMode::Sync,
         },
         move || {
-            let api_name = name.cst_decode();
+            let api_shared_secret_key = shared_secret_key.cst_decode();
+            let api_ciphertext = ciphertext.cst_decode();
+            let api_iv = iv.cst_decode();
             transform_result_dco((move || {
-                Result::<_, ()>::Ok(crate::api::simple::greet(api_name))
+                Result::<_, ()>::Ok(crate::api::rust_x3dh_e2e::decrypt_with_bytes_key(
+                    api_shared_secret_key,
+                    api_ciphertext,
+                    api_iv,
+                ))
+            })())
+        },
+    )
+}
+fn wire_decrypt_with_hex_string_key_impl(
+    shared_secret_key: impl CstDecode<String>,
+    ciphertext: impl CstDecode<Vec<u8>>,
+    iv: impl CstDecode<Vec<u8>>,
+) -> flutter_rust_bridge::for_generated::WireSyncRust2DartDco {
+    FLUTTER_RUST_BRIDGE_HANDLER.wrap_sync::<flutter_rust_bridge::for_generated::DcoCodec, _>(
+        flutter_rust_bridge::for_generated::TaskInfo {
+            debug_name: "decrypt_with_hex_string_key",
+            port: None,
+            mode: flutter_rust_bridge::for_generated::FfiCallMode::Sync,
+        },
+        move || {
+            let api_shared_secret_key = shared_secret_key.cst_decode();
+            let api_ciphertext = ciphertext.cst_decode();
+            let api_iv = iv.cst_decode();
+            transform_result_dco((move || {
+                Result::<_, ()>::Ok(crate::api::rust_x3dh_e2e::decrypt_with_hex_string_key(
+                    api_shared_secret_key,
+                    api_ciphertext,
+                    api_iv,
+                ))
+            })())
+        },
+    )
+}
+fn wire_encrypt_with_bytes_key_impl(
+    shared_secret_key: impl CstDecode<Vec<u8>>,
+    plaintext: impl CstDecode<String>,
+) -> flutter_rust_bridge::for_generated::WireSyncRust2DartDco {
+    FLUTTER_RUST_BRIDGE_HANDLER.wrap_sync::<flutter_rust_bridge::for_generated::DcoCodec, _>(
+        flutter_rust_bridge::for_generated::TaskInfo {
+            debug_name: "encrypt_with_bytes_key",
+            port: None,
+            mode: flutter_rust_bridge::for_generated::FfiCallMode::Sync,
+        },
+        move || {
+            let api_shared_secret_key = shared_secret_key.cst_decode();
+            let api_plaintext = plaintext.cst_decode();
+            transform_result_dco((move || {
+                Result::<_, ()>::Ok(crate::api::rust_x3dh_e2e::encrypt_with_bytes_key(
+                    api_shared_secret_key,
+                    api_plaintext,
+                ))
+            })())
+        },
+    )
+}
+fn wire_encrypt_with_hex_string_key_impl(
+    shared_secret_key: impl CstDecode<String>,
+    plaintext: impl CstDecode<String>,
+) -> flutter_rust_bridge::for_generated::WireSyncRust2DartDco {
+    FLUTTER_RUST_BRIDGE_HANDLER.wrap_sync::<flutter_rust_bridge::for_generated::DcoCodec, _>(
+        flutter_rust_bridge::for_generated::TaskInfo {
+            debug_name: "encrypt_with_hex_string_key",
+            port: None,
+            mode: flutter_rust_bridge::for_generated::FfiCallMode::Sync,
+        },
+        move || {
+            let api_shared_secret_key = shared_secret_key.cst_decode();
+            let api_plaintext = plaintext.cst_decode();
+            transform_result_dco((move || {
+                Result::<_, ()>::Ok(crate::api::rust_x3dh_e2e::encrypt_with_hex_string_key(
+                    api_shared_secret_key,
+                    api_plaintext,
+                ))
             })())
         },
     )
@@ -58,9 +135,9 @@ fn wire_init_app_impl(port_: flutter_rust_bridge::for_generated::MessagePort) {
         },
         move || {
             move |context| {
-                transform_result_dco(
-                    (move || Result::<_, ()>::Ok(crate::api::simple::init_app()))(),
-                )
+                transform_result_dco((move || {
+                    Result::<_, ()>::Ok(crate::api::rust_x3dh_e2e::init_app())
+                })())
             }
         },
     )
@@ -88,6 +165,14 @@ impl SseDecode for Vec<u8> {
             ans_.push(<u8>::sse_decode(deserializer));
         }
         return ans_;
+    }
+}
+
+impl SseDecode for (Vec<u8>, Vec<u8>) {
+    fn sse_decode(deserializer: &mut flutter_rust_bridge::for_generated::SseDeserializer) -> Self {
+        let mut var_field0 = <Vec<u8>>::sse_decode(deserializer);
+        let mut var_field1 = <Vec<u8>>::sse_decode(deserializer);
+        return (var_field0, var_field1);
     }
 }
 
@@ -127,6 +212,13 @@ impl SseEncode for Vec<u8> {
         for item in self {
             <u8>::sse_encode(item, serializer);
         }
+    }
+}
+
+impl SseEncode for (Vec<u8>, Vec<u8>) {
+    fn sse_encode(self, serializer: &mut flutter_rust_bridge::for_generated::SseSerializer) {
+        <Vec<u8>>::sse_encode(self.0, serializer);
+        <Vec<u8>>::sse_encode(self.1, serializer);
     }
 }
 

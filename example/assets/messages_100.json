@@ -1,0 +1,702 @@
+[
+    {
+        "key_pair": {
+            "u1_shared_secret_key": "350ff7adbe9e77f14c3d0e3418bbbbda565c367d5915f0698a95ecced1bc0748",
+            "u2_shared_secret_key": "350ff7adbe9e77f14c3d0e3418bbbbda565c367d5915f0698a95ecced1bc0748"
+        },
+        "text": "Good day!"
+    },
+    {
+        "key_pair": {
+            "u1_shared_secret_key": "fbe6b3d496a12f9512d56e1f717b1d5f93b0f7f3e5c7d55349d27c62b230d449",
+            "u2_shared_secret_key": "fbe6b3d496a12f9512d56e1f717b1d5f93b0f7f3e5c7d55349d27c62b230d449"
+        },
+        "text": "Nice to meet you."
+    },
+    {
+        "key_pair": {
+            "u1_shared_secret_key": "81b907ade24e0c617612b9e75d4a33dd543dc9bce21d7a58c62eda2062c76f5a",
+            "u2_shared_secret_key": "81b907ade24e0c617612b9e75d4a33dd543dc9bce21d7a58c62eda2062c76f5a"
+        },
+        "text": "How can I help?"
+    },
+    {
+        "key_pair": {
+            "u1_shared_secret_key": "6b912267a53c41fd909deb697e6bcfbd3bed2539cf9f7026ec151be7744eff17",
+            "u2_shared_secret_key": "6b912267a53c41fd909deb697e6bcfbd3bed2539cf9f7026ec151be7744eff17"
+        },
+        "text": "What's new?"
+    },
+    {
+        "key_pair": {
+            "u1_shared_secret_key": "f347c2a0861fbecdc6b02b1b1845da93ba32fd875130fe951f90a88dba1a5473",
+            "u2_shared_secret_key": "f347c2a0861fbecdc6b02b1b1845da93ba32fd875130fe951f90a88dba1a5473"
+        },
+        "text": "What brings you here today?"
+    },
+    {
+        "key_pair": {
+            "u1_shared_secret_key": "3b81301e3eacfc1c94620dd8dedf69dadf791de03d294f7dcf8b7b18b22ff79d",
+            "u2_shared_secret_key": "3b81301e3eacfc1c94620dd8dedf69dadf791de03d294f7dcf8b7b18b22ff79d"
+        },
+        "text": "Lovely weather we're having."
+    },
+    {
+        "key_pair": {
+            "u1_shared_secret_key": "b479398e30fbecd4d090ed5d688964cfd884cb3eaa04bb9f037f08735128dc1c",
+            "u2_shared_secret_key": "b479398e30fbecd4d090ed5d688964cfd884cb3eaa04bb9f037f08735128dc1c"
+        },
+        "text": "Working hard or hardly working?"
+    },
+    {
+        "key_pair": {
+            "u1_shared_secret_key": "3c5d9a0612965150ea2e27d127b2ea35df65dcc2b7fb0346c5070fcc06adf953",
+            "u2_shared_secret_key": "3c5d9a0612965150ea2e27d127b2ea35df65dcc2b7fb0346c5070fcc06adf953"
+        },
+        "text": "Happy Monday!"
+    },
+    {
+        "key_pair": {
+            "u1_shared_secret_key": "ff9b0183a2e6e1d4ae3ac29f36bd4353e0c57dcb4922b9aa19a1f5ecfb82fd0f",
+            "u2_shared_secret_key": "ff9b0183a2e6e1d4ae3ac29f36bd4353e0c57dcb4922b9aa19a1f5ecfb82fd0f"
+        },
+        "text": "Thank you for your email."
+    },
+    {
+        "key_pair": {
+            "u1_shared_secret_key": "2b27f7db8c0d0d35951b368f5bbba1499abbde3eed74f48fee6a01a5d6f627d4",
+            "u2_shared_secret_key": "2b27f7db8c0d0d35951b368f5bbba1499abbde3eed74f48fee6a01a5d6f627d4"
+        },
+        "text": "Glad to hear you're well."
+    },
+    {
+        "key_pair": {
+            "u1_shared_secret_key": "d4281c032c4d79e53151f1b8911630cc3005aa4e6fde15f26065386796530b3c",
+            "u2_shared_secret_key": "d4281c032c4d79e53151f1b8911630cc3005aa4e6fde15f26065386796530b3c"
+        },
+        "text": "Sorry for the delay in responding."
+    },
+    {
+        "key_pair": {
+            "u1_shared_secret_key": "8f3fdb4cda3dae9dd990ac433786bbcbf4c094639982aa5dd93e8626b1d1732e",
+            "u2_shared_secret_key": "8f3fdb4cda3dae9dd990ac433786bbcbf4c094639982aa5dd93e8626b1d1732e"
+        },
+        "text": "Thank you for your patience."
+    },
+    {
+        "key_pair": {
+            "u1_shared_secret_key": "c201d0cf0d1fd6d6f6b7fe175b1d10fc62b520ba2e09940aa86f5de518eea154",
+            "u2_shared_secret_key": "c201d0cf0d1fd6d6f6b7fe175b1d10fc62b520ba2e09940aa86f5de518eea154"
+        },
+        "text": "I appreciate you taking the time to provide feedback."
+    },
+    {
+        "key_pair": {
+            "u1_shared_secret_key": "1fdd55b28e149ebbb134ea9e24d30edbc83cec05a2d6db070453b697323aa124",
+            "u2_shared_secret_key": "1fdd55b28e149ebbb134ea9e24d30edbc83cec05a2d6db070453b697323aa124"
+        },
+        "text": "No problem at all, happy to help."
+    },
+    {
+        "key_pair": {
+            "u1_shared_secret_key": "2722e1b3d11c3bd7c082af4f1a17b0be50b122a12d794dbedb62b2947964698c",
+            "u2_shared_secret_key": "2722e1b3d11c3bd7c082af4f1a17b0be50b122a12d794dbedb62b2947964698c"
+        },
+        "text": "Thank you for bringing this to my attention."
+    },
+    {
+        "key_pair": {
+            "u1_shared_secret_key": "4362e9e61b69c97295cd190ecfa1ba266788c713df05d5c88e95ed31035642ee",
+            "u2_shared_secret_key": "4362e9e61b69c97295cd190ecfa1ba266788c713df05d5c88e95ed31035642ee"
+        },
+        "text": "Thank you for flagging this issue."
+    },
+    {
+        "key_pair": {
+            "u1_shared_secret_key": "d7bc5717e0a0541dc32cd773e8f9b62f2529a9b0e56befcd297353ec7b53eb55",
+            "u2_shared_secret_key": "d7bc5717e0a0541dc32cd773e8f9b62f2529a9b0e56befcd297353ec7b53eb55"
+        },
+        "text": "Please let me know if you need anything else."
+    },
+    {
+        "key_pair": {
+            "u1_shared_secret_key": "c08c6fd17e111b5d244733bac1943628802889c7c6e3569b3d403da42b1766ec",
+            "u2_shared_secret_key": "c08c6fd17e111b5d244733bac1943628802889c7c6e3569b3d403da42b1766ec"
+        },
+        "text": "Hope you're having a great week so far."
+    },
+    {
+        "key_pair": {
+            "u1_shared_secret_key": "6d72ddac91ccb21994914935f2da93abeee277153cfb7b8624304347dd5e0e9d",
+            "u2_shared_secret_key": "6d72ddac91ccb21994914935f2da93abeee277153cfb7b8624304347dd5e0e9d"
+        },
+        "text": "Wishing you a restful weekend."
+    },
+    {
+        "key_pair": {
+            "u1_shared_secret_key": "4af2dbcfb4e917b6801f05c7c28004d6951fd05e4a95bcd08e941b7a494a9bb5",
+            "u2_shared_secret_key": "4af2dbcfb4e917b6801f05c7c28004d6951fd05e4a95bcd08e941b7a494a9bb5"
+        },
+        "text": "Thanks for connecting!"
+    },
+    {
+        "key_pair": {
+            "u1_shared_secret_key": "e8ce30a4e26ffcbe7006bcb4817e5427528ef78c3e5083475cc2ddad6adf48b3",
+            "u2_shared_secret_key": "e8ce30a4e26ffcbe7006bcb4817e5427528ef78c3e5083475cc2ddad6adf48b3"
+        },
+        "text": "Greetings!"
+    },
+    {
+        "key_pair": {
+            "u1_shared_secret_key": "953b66249480bdb7f9904d7961884971efb16618f88e1ce108daf0bda84ef6a1",
+            "u2_shared_secret_key": "953b66249480bdb7f9904d7961884971efb16618f88e1ce108daf0bda84ef6a1"
+        },
+        "text": "Hi there!"
+    },
+    {
+        "key_pair": {
+            "u1_shared_secret_key": "19d202463991a6a68e977e6f0b8691d461e501cae98190adfba8c2e9490a45e1",
+            "u2_shared_secret_key": "19d202463991a6a68e977e6f0b8691d461e501cae98190adfba8c2e9490a45e1"
+        },
+        "text": "Hope all is well."
+    },
+    {
+        "key_pair": {
+            "u1_shared_secret_key": "a1173dac489eeb5c481e4b9c446c46562dfcf86e6b3d335855cdb3af63aa7168",
+            "u2_shared_secret_key": "a1173dac489eeb5c481e4b9c446c46562dfcf86e6b3d335855cdb3af63aa7168"
+        },
+        "text": "Welcome!"
+    },
+    {
+        "key_pair": {
+            "u1_shared_secret_key": "bd089efc5242abab69054e2dcb19daa4113d9e14d4bae18ea093e0f02ba3a33d",
+            "u2_shared_secret_key": "bd089efc5242abab69054e2dcb19daa4113d9e14d4bae18ea093e0f02ba3a33d"
+        },
+        "text": "All the best."
+    },
+    {
+        "key_pair": {
+            "u1_shared_secret_key": "b4a64c05e9d7f12ee393f9a66f7e96bd488517ed6fdc71bcfa0fc0111ce5c0bf",
+            "u2_shared_secret_key": "b4a64c05e9d7f12ee393f9a66f7e96bd488517ed6fdc71bcfa0fc0111ce5c0bf"
+        },
+        "text": "Have a wonderful day!"
+    },
+    {
+        "key_pair": {
+            "u1_shared_secret_key": "ac15ff0a53c9bae17a64af669e8b9568b3c12310927e2b705ef549a32ba5db6a",
+            "u2_shared_secret_key": "ac15ff0a53c9bae17a64af669e8b9568b3c12310927e2b705ef549a32ba5db6a"
+        },
+        "text": "Hello!"
+    },
+    {
+        "key_pair": {
+            "u1_shared_secret_key": "0ac7fe505a05c5e9f8b95d3df0b7583e0b9fda5aab25a0d51e60c3c628aae3df",
+            "u2_shared_secret_key": "0ac7fe505a05c5e9f8b95d3df0b7583e0b9fda5aab25a0d51e60c3c628aae3df"
+        },
+        "text": "It's good to hear from you."
+    },
+    {
+        "key_pair": {
+            "u1_shared_secret_key": "a6cb859d67aa33d170b47b33dc958384981ab6663cefe88120f36206ed178b38",
+            "u2_shared_secret_key": "a6cb859d67aa33d170b47b33dc958384981ab6663cefe88120f36206ed178b38"
+        },
+        "text": "Hope you're keeping well."
+    },
+    {
+        "key_pair": {
+            "u1_shared_secret_key": "5159e5c48c7268b7bfbe54d60cb4a9ec1d3df91726da4cc4c096e3f23ae67586",
+            "u2_shared_secret_key": "5159e5c48c7268b7bfbe54d60cb4a9ec1d3df91726da4cc4c096e3f23ae67586"
+        },
+        "text": "Thanks for reaching out."
+    },
+    {
+        "key_pair": {
+            "u1_shared_secret_key": "c54fd53a9e0eaaac6fb2261a515cd1e5dd7b4720b97a326ebdbae04be412b771",
+            "u2_shared_secret_key": "c54fd53a9e0eaaac6fb2261a515cd1e5dd7b4720b97a326ebdbae04be412b771"
+        },
+        "text": "Great chatting with you."
+    },
+    {
+        "key_pair": {
+            "u1_shared_secret_key": "8f6c4f4af0cc55f460ce2796220b9cb9ff41a6b85710f74bbe0ce22167be4a1d",
+            "u2_shared_secret_key": "8f6c4f4af0cc55f460ce2796220b9cb9ff41a6b85710f74bbe0ce22167be4a1d"
+        },
+        "text": "Take care."
+    },
+    {
+        "key_pair": {
+            "u1_shared_secret_key": "3a58dfb763fbbef325bd1acba93b1e7d88e25f3ab5117f40b24f6f2b721f09c2",
+            "u2_shared_secret_key": "3a58dfb763fbbef325bd1acba93b1e7d88e25f3ab5117f40b24f6f2b721f09c2"
+        },
+        "text": "Drop me a line if you want to discuss further."
+    },
+    {
+        "key_pair": {
+            "u1_shared_secret_key": "450beb9cbfc0cc25edd336d16865c955694c072303c88a21eac1e5768550b6b0",
+            "u2_shared_secret_key": "450beb9cbfc0cc25edd336d16865c955694c072303c88a21eac1e5768550b6b0"
+        },
+        "text": "Talk soon."
+    },
+    {
+        "key_pair": {
+            "u1_shared_secret_key": "74504da921776a4823fe224c0232f8febe72521fbf649409c0162fa123bbc57a",
+            "u2_shared_secret_key": "74504da921776a4823fe224c0232f8febe72521fbf649409c0162fa123bbc57a"
+        },
+        "text": "All the best with everything."
+    },
+    {
+        "key_pair": {
+            "u1_shared_secret_key": "449a86ecba7864da04712b49bbe71e8561b468ebd32ba86c9185d63e3cff60d9",
+            "u2_shared_secret_key": "449a86ecba7864da04712b49bbe71e8561b468ebd32ba86c9185d63e3cff60d9"
+        },
+        "text": "Happy Friday!"
+    },
+    {
+        "key_pair": {
+            "u1_shared_secret_key": "d6db0639c1117c89429465a25e961d0ebf09fde246e3a9b7d0697705b7729c2e",
+            "u2_shared_secret_key": "d6db0639c1117c89429465a25e961d0ebf09fde246e3a9b7d0697705b7729c2e"
+        },
+        "text": "Hope you're enjoying the nice weather."
+    },
+    {
+        "key_pair": {
+            "u1_shared_secret_key": "5f3bcc5849935ba46fa36bf10f4d74e5f39170944aa6d92d5716096f1b53ba7d",
+            "u2_shared_secret_key": "5f3bcc5849935ba46fa36bf10f4d74e5f39170944aa6d92d5716096f1b53ba7d"
+        },
+        "text": "Stay safe out there."
+    },
+    {
+        "key_pair": {
+            "u1_shared_secret_key": "8fc113847ca95580769852617903a63cbc1fed32272d490eae22404e39456cec",
+            "u2_shared_secret_key": "8fc113847ca95580769852617903a63cbc1fed32272d490eae22404e39456cec"
+        },
+        "text": "Good to see you!"
+    },
+    {
+        "key_pair": {
+            "u1_shared_secret_key": "1e017a9bbafd7396970d0f49fdf5127357148f1404ccfd28614a8011dbfad25d",
+            "u2_shared_secret_key": "1e017a9bbafd7396970d0f49fdf5127357148f1404ccfd28614a8011dbfad25d"
+        },
+        "text": "Let me know your thoughts."
+    },
+    {
+        "key_pair": {
+            "u1_shared_secret_key": "a3a377eeb3491ca56c9904d93adf631c5957d6127fae5e2d0d91783da49a044e",
+            "u2_shared_secret_key": "a3a377eeb3491ca56c9904d93adf631c5957d6127fae5e2d0d91783da49a044e"
+        },
+        "text": "Nice catching up."
+    },
+    {
+        "key_pair": {
+            "u1_shared_secret_key": "9c95067471b70058b77b5c8f3894b4b574353e9e5c338684781911bda29b7eb8",
+            "u2_shared_secret_key": "9c95067471b70058b77b5c8f3894b4b574353e9e5c338684781911bda29b7eb8"
+        },
+        "text": "Hope you have a restful evening."
+    },
+    {
+        "key_pair": {
+            "u1_shared_secret_key": "d7a1bd668e0b303ceac29840f3f363f358402760dfcebec94a8167f57fe7ac97",
+            "u2_shared_secret_key": "d7a1bd668e0b303ceac29840f3f363f358402760dfcebec94a8167f57fe7ac97"
+        },
+        "text": "Be well."
+    },
+    {
+        "key_pair": {
+            "u1_shared_secret_key": "e0a10011307f1095738404b6dcb6649d7a0860b7d145d61bc3810a7f2df9d2c1",
+            "u2_shared_secret_key": "e0a10011307f1095738404b6dcb6649d7a0860b7d145d61bc3810a7f2df9d2c1"
+        },
+        "text": "Happy Wednesday!"
+    },
+    {
+        "key_pair": {
+            "u1_shared_secret_key": "61679ad86c5256514fc53303df8933330f3c0279a894ae2887f340ae7966ff1c",
+            "u2_shared_secret_key": "61679ad86c5256514fc53303df8933330f3c0279a894ae2887f340ae7966ff1c"
+        },
+        "text": "Speak soon."
+    },
+    {
+        "key_pair": {
+            "u1_shared_secret_key": "fb57831f5c33f9aa75dfe4ab4e9e139ad50a7f230b2d3bbb9068aa170535d184",
+            "u2_shared_secret_key": "fb57831f5c33f9aa75dfe4ab4e9e139ad50a7f230b2d3bbb9068aa170535d184"
+        },
+        "text": "How can I help you today?"
+    },
+    {
+        "key_pair": {
+            "u1_shared_secret_key": "6a34bb048461aa562d1aedae351a16900919bf58fd5be980440a1b50db8a07f5",
+            "u2_shared_secret_key": "6a34bb048461aa562d1aedae351a16900919bf58fd5be980440a1b50db8a07f5"
+        },
+        "text": "Wishing you a great week ahead."
+    },
+    {
+        "key_pair": {
+            "u1_shared_secret_key": "32bb78b62b93a2aff45fb22bb94da9c6bb3c88e61045393e17f8e5a39faed3ca",
+            "u2_shared_secret_key": "32bb78b62b93a2aff45fb22bb94da9c6bb3c88e61045393e17f8e5a39faed3ca"
+        },
+        "text": "Have a lovely weekend."
+    },
+    {
+        "key_pair": {
+            "u1_shared_secret_key": "25d1f3fd050187e90e08d26e1d8787e2885899c5341913e9894f8839e2e25493",
+            "u2_shared_secret_key": "25d1f3fd050187e90e08d26e1d8787e2885899c5341913e9894f8839e2e25493"
+        },
+        "text": "Hope you're doing okay."
+    },
+    {
+        "key_pair": {
+            "u1_shared_secret_key": "6738cfc048b9067dd83de38322604a61ad9e721d355f3fcbb2a4b06c7f2443c1",
+            "u2_shared_secret_key": "6738cfc048b9067dd83de38322604a61ad9e721d355f3fcbb2a4b06c7f2443c1"
+        },
+        "text": "Thank you for your business."
+    },
+    {
+        "key_pair": {
+            "u1_shared_secret_key": "e5389eca929d06ae2173afa53595d9cfadf2142dba43df3dd69a406b9ce20e49",
+            "u2_shared_secret_key": "e5389eca929d06ae2173afa53595d9cfadf2142dba43df3dd69a406b9ce20e49"
+        },
+        "text": "You're very welcome."
+    },
+    {
+        "key_pair": {
+            "u1_shared_secret_key": "59ef02f98d1acc6e7c277687399ddaaccd08d3518fb6261a2d4c0daf84b38a80",
+            "u2_shared_secret_key": "59ef02f98d1acc6e7c277687399ddaaccd08d3518fb6261a2d4c0daf84b38a80"
+        },
+        "text": "Keep smiling!"
+    },
+    {
+        "key_pair": {
+            "u1_shared_secret_key": "6bbc07b352ba29a98116bee5b79fb60825b3608533f6a0724b4cb564e73ca13a",
+            "u2_shared_secret_key": "6bbc07b352ba29a98116bee5b79fb60825b3608533f6a0724b4cb564e73ca13a"
+        },
+        "text": "Enjoy the rest of your day."
+    },
+    {
+        "key_pair": {
+            "u1_shared_secret_key": "dcf17b4abce7b8cd45cc202668796d14ea7d1d30e780e4009fab5db9ee47b16b",
+            "u2_shared_secret_key": "dcf17b4abce7b8cd45cc202668796d14ea7d1d30e780e4009fab5db9ee47b16b"
+        },
+        "text": "Hope you have a wonderful rest of your week!"
+    },
+    {
+        "key_pair": {
+            "u1_shared_secret_key": "45172516e865e15c6272dc6a2b867402e32334c8d236621201aa3b1f1a431e9a",
+            "u2_shared_secret_key": "45172516e865e15c6272dc6a2b867402e32334c8d236621201aa3b1f1a431e9a"
+        },
+        "text": "Many thanks!"
+    },
+    {
+        "key_pair": {
+            "u1_shared_secret_key": "0139cd148000c54a453987d5e1ac1fcb39cdea6f91853c6aa0c9c08d84be7d23",
+            "u2_shared_secret_key": "0139cd148000c54a453987d5e1ac1fcb39cdea6f91853c6aa0c9c08d84be7d23"
+        },
+        "text": "Just wanted to touch base."
+    },
+    {
+        "key_pair": {
+            "u1_shared_secret_key": "86a7a573ee5730f1a09f6edcfeb602dce696df461a8ce4795b4d5f467773f997",
+            "u2_shared_secret_key": "86a7a573ee5730f1a09f6edcfeb602dce696df461a8ce4795b4d5f467773f997"
+        },
+        "text": "Best regards."
+    },
+    {
+        "key_pair": {
+            "u1_shared_secret_key": "f0fd2974ffa8eba4b547c9c92c1f827186d75117affad0fb1e1564142687e7df",
+            "u2_shared_secret_key": "f0fd2974ffa8eba4b547c9c92c1f827186d75117affad0fb1e1564142687e7df"
+        },
+        "text": "Kind regards."
+    },
+    {
+        "key_pair": {
+            "u1_shared_secret_key": "3d93da5450c90ac64dc8db5fb2e7d5176af925c2de0b0e79a7744f22dba896f3",
+            "u2_shared_secret_key": "3d93da5450c90ac64dc8db5fb2e7d5176af925c2de0b0e79a7744f22dba896f3"
+        },
+        "text": "Talk soon and stay well."
+    },
+    {
+        "key_pair": {
+            "u1_shared_secret_key": "6c94c9f7bad807b7398f332b6db3fcc5eb006d237c7c3d458c97c1f3bb431444",
+            "u2_shared_secret_key": "6c94c9f7bad807b7398f332b6db3fcc5eb006d237c7c3d458c97c1f3bb431444"
+        },
+        "text": "Looking forward to chatting more"
+    },
+    {
+        "key_pair": {
+            "u1_shared_secret_key": "76ccdf81232c6dad1ae2f63d08d4ac2b58e40808a7b631a6d28d6f8df8a2e2cd",
+            "u2_shared_secret_key": "76ccdf81232c6dad1ae2f63d08d4ac2b58e40808a7b631a6d28d6f8df8a2e2cd"
+        },
+        "text": "All the best in your endeavors"
+    },
+    {
+        "key_pair": {
+            "u1_shared_secret_key": "dbc0770d969ef6c8ed1959131ef91f093db75db96894763dd2c7c6c787a8e183",
+            "u2_shared_secret_key": "dbc0770d969ef6c8ed1959131ef91f093db75db96894763dd2c7c6c787a8e183"
+        },
+        "text": "Hope life is treating you well"
+    },
+    {
+        "key_pair": {
+            "u1_shared_secret_key": "0754e16f969350be42f0c339eaf504af3f225582dd858461f4245e4c282e4fc2",
+            "u2_shared_secret_key": "0754e16f969350be42f0c339eaf504af3f225582dd858461f4245e4c282e4fc2"
+        },
+        "text": "Wishing you many blessings"
+    },
+    {
+        "key_pair": {
+            "u1_shared_secret_key": "44269f68828d00f31ac45ec533f97ff2fa2f8f6ae9544c14d979ca896245bc56",
+            "u2_shared_secret_key": "44269f68828d00f31ac45ec533f97ff2fa2f8f6ae9544c14d979ca896245bc56"
+        },
+        "text": "You've been on my mind, hope all is well"
+    },
+    {
+        "key_pair": {
+            "u1_shared_secret_key": "d169bdfadf5bfca909c4662acc18ef1db256ad4863e9dec37f7f16556d661b1d",
+            "u2_shared_secret_key": "d169bdfadf5bfca909c4662acc18ef1db256ad4863e9dec37f7f16556d661b1d"
+        },
+        "text": "Congratulations on your recent success"
+    },
+    {
+        "key_pair": {
+            "u1_shared_secret_key": "16314cda065067fac3c172c4e84634162e78dd080d2c77720295d730de8b7d81",
+            "u2_shared_secret_key": "16314cda065067fac3c172c4e84634162e78dd080d2c77720295d730de8b7d81"
+        },
+        "text": "Thank you for keeping in touch"
+    },
+    {
+        "key_pair": {
+            "u1_shared_secret_key": "61343ff1c8f0c43d0c0fecd11420d93019c707a18c78e7492c22314d3946bae5",
+            "u2_shared_secret_key": "61343ff1c8f0c43d0c0fecd11420d93019c707a18c78e7492c22314d3946bae5"
+        },
+        "text": "Appreciate you taking the time to connect"
+    },
+    {
+        "key_pair": {
+            "u1_shared_secret_key": "c07e68b17ae24ce7a6fd2caa873e0909b5dc94548cf5ddc6942307c3440a3079",
+            "u2_shared_secret_key": "c07e68b17ae24ce7a6fd2caa873e0909b5dc94548cf5ddc6942307c3440a3079"
+        },
+        "text": "Your message made me smile, thanks!"
+    },
+    {
+        "key_pair": {
+            "u1_shared_secret_key": "2a2800819e5409fe1a57edc9d1b36313624c808a111fcd5647511bcf593636f7",
+            "u2_shared_secret_key": "2a2800819e5409fe1a57edc9d1b36313624c808a111fcd5647511bcf593636f7"
+        },
+        "text": "Hope this email finds you well and happy"
+    },
+    {
+        "key_pair": {
+            "u1_shared_secret_key": "f82ad3d26d16fd2d00fa90136ce38672428052f9f5d32ccf1682c12d1f9f8ed9",
+            "u2_shared_secret_key": "f82ad3d26d16fd2d00fa90136ce38672428052f9f5d32ccf1682c12d1f9f8ed9"
+        },
+        "text": "Hoping you and yours are staying healthy"
+    },
+    {
+        "key_pair": {
+            "u1_shared_secret_key": "e5be3dda0702f87dd0d7d71ece2cf57cfdea6e1dcd9734aa7b816f56b61a65c5",
+            "u2_shared_secret_key": "e5be3dda0702f87dd0d7d71ece2cf57cfdea6e1dcd9734aa7b816f56b61a65c5"
+        },
+        "text": "Wishing you peace and prosperity always"
+    },
+    {
+        "key_pair": {
+            "u1_shared_secret_key": "511cfe61e04e9f1db348f9488c2d19743aebf536a9b31bb1f7043ee95c217bca",
+            "u2_shared_secret_key": "511cfe61e04e9f1db348f9488c2d19743aebf536a9b31bb1f7043ee95c217bca"
+        },
+        "text": "Sending positive vibes your way"
+    },
+    {
+        "key_pair": {
+            "u1_shared_secret_key": "fc6d63225e3f2499d75243931103255280da7ea3724cfb919d4be0a83720fc81",
+            "u2_shared_secret_key": "fc6d63225e3f2499d75243931103255280da7ea3724cfb919d4be0a83720fc81"
+        },
+        "text": "Hope you're surrounded by loved ones"
+    },
+    {
+        "key_pair": {
+            "u1_shared_secret_key": "c617106ce111795a9f634815516c86d3f1959528210f5931d0c93856ed297270",
+            "u2_shared_secret_key": "c617106ce111795a9f634815516c86d3f1959528210f5931d0c93856ed297270"
+        },
+        "text": "Lots of positive energy being sent to you"
+    },
+    {
+        "key_pair": {
+            "u1_shared_secret_key": "91063d71378b0b5e33c02ef4a12cd7b663d64e245bedcc35254e6a9209b8fc7b",
+            "u2_shared_secret_key": "91063d71378b0b5e33c02ef4a12cd7b663d64e245bedcc35254e6a9209b8fc7b"
+        },
+        "text": "Keep up the good work over there"
+    },
+    {
+        "key_pair": {
+            "u1_shared_secret_key": "09d0145f711c3baa82db000aa687e522be915fb2660839e1e510e88886e41d84",
+            "u2_shared_secret_key": "09d0145f711c3baa82db000aa687e522be915fb2660839e1e510e88886e41d84"
+        },
+        "text": "You've got this, sending encouragement"
+    },
+    {
+        "key_pair": {
+            "u1_shared_secret_key": "522da1dda260acb4f1c5182f28f2f683d77babb7aea7acfda89ffacef005c654",
+            "u2_shared_secret_key": "522da1dda260acb4f1c5182f28f2f683d77babb7aea7acfda89ffacef005c654"
+        },
+        "text": "Laughter is the best medicine, hope you're laughing lots"
+    },
+    {
+        "key_pair": {
+            "u1_shared_secret_key": "a32fda505854cdc8a1a65044ec4295ec089deab3bc076c57b8eb7769d3dab182",
+            "u2_shared_secret_key": "a32fda505854cdc8a1a65044ec4295ec089deab3bc076c57b8eb7769d3dab182"
+        },
+        "text": "Admire your dedication and passion"
+    },
+    {
+        "key_pair": {
+            "u1_shared_secret_key": "c8ccd1494ea6d18ebf8a2b7849efec78b6a483047419093aa3f9ee9bb926be79",
+            "u2_shared_secret_key": "c8ccd1494ea6d18ebf8a2b7849efec78b6a483047419093aa3f9ee9bb926be79"
+        },
+        "text": "Inspired by your courage and strength"
+    },
+    {
+        "key_pair": {
+            "u1_shared_secret_key": "bd695c1a0969c3564b844f27710e0202c34d322bcd20de62a98832f6e0754aeb",
+            "u2_shared_secret_key": "bd695c1a0969c3564b844f27710e0202c34d322bcd20de62a98832f6e0754aeb"
+        },
+        "text": "Wishing you joy, health, and happiness"
+    },
+    {
+        "key_pair": {
+            "u1_shared_secret_key": "170330358eb72eccda93dc1ae7624e1c3a5684fb2c0f1714df9e08d49ad80aca",
+            "u2_shared_secret_key": "170330358eb72eccda93dc1ae7624e1c3a5684fb2c0f1714df9e08d49ad80aca"
+        },
+        "text": "You are talented and amazing, believe in yourself"
+    },
+    {
+        "key_pair": {
+            "u1_shared_secret_key": "586616ac11311ef8eab773b6e09b5edb9e3fbe0479a4718974d254146c96ce3d",
+            "u2_shared_secret_key": "586616ac11311ef8eab773b6e09b5edb9e3fbe0479a4718974d254146c96ce3d"
+        },
+        "text": "Hoping your day is as bright as your spirit"
+    },
+    {
+        "key_pair": {
+            "u1_shared_secret_key": "f9d5b4540701137ad744bcb6bc9b4111a721801b604a1d633bdcebb505510286",
+            "u2_shared_secret_key": "f9d5b4540701137ad744bcb6bc9b4111a721801b604a1d633bdcebb505510286"
+        },
+        "text": "Thanks for bringing such light to the world"
+    },
+    {
+        "key_pair": {
+            "u1_shared_secret_key": "515cbb7f5c653e96d0ec2a2bf71476bb94cbae01e005383f287c99b3f6686887",
+            "u2_shared_secret_key": "515cbb7f5c653e96d0ec2a2bf71476bb94cbae01e005383f287c99b3f6686887"
+        },
+        "text": "Better days are ahead, stay positive"
+    },
+    {
+        "key_pair": {
+            "u1_shared_secret_key": "a3231dc876038a5a4e5bd668d9ccec7b6ed95b6d1571292906f9baaae13393bc",
+            "u2_shared_secret_key": "a3231dc876038a5a4e5bd668d9ccec7b6ed95b6d1571292906f9baaae13393bc"
+        },
+        "text": "Spreading virtual hugs your way"
+    },
+    {
+        "key_pair": {
+            "u1_shared_secret_key": "ac86a2203f5a94a3481e3384c28cb7cf584e9b6217f224f22f55af5ad4be2f36",
+            "u2_shared_secret_key": "ac86a2203f5a94a3481e3384c28cb7cf584e9b6217f224f22f55af5ad4be2f36"
+        },
+        "text": "Can't wait to see what the future holds"
+    },
+    {
+        "key_pair": {
+            "u1_shared_secret_key": "5c1635eec2de23cc281c2a77ff94b78d258323e7ac1ac0e059e31db03d33a195",
+            "u2_shared_secret_key": "5c1635eec2de23cc281c2a77ff94b78d258323e7ac1ac0e059e31db03d33a195"
+        },
+        "text": "Thinking of you from afar"
+    },
+    {
+        "key_pair": {
+            "u1_shared_secret_key": "de753b555762b367028bac476f983c83fdf0c3e0bbfa80f2849625375e3357ed",
+            "u2_shared_secret_key": "de753b555762b367028bac476f983c83fdf0c3e0bbfa80f2849625375e3357ed"
+        },
+        "text": "Miss seeing your smiling face"
+    },
+    {
+        "key_pair": {
+            "u1_shared_secret_key": "539f3192b70ef8c113331a3827abbcc57ee62cdc86e4e2d125a1a26239a694fb",
+            "u2_shared_secret_key": "539f3192b70ef8c113331a3827abbcc57ee62cdc86e4e2d125a1a26239a694fb"
+        },
+        "text": "Sending virtual cookies and good vibes"
+    },
+    {
+        "key_pair": {
+            "u1_shared_secret_key": "b194e421dd1ca0199f9e4f3dd2c1a1f96c2abd39e02cc6581c53184238b63ab9",
+            "u2_shared_secret_key": "b194e421dd1ca0199f9e4f3dd2c1a1f96c2abd39e02cc6581c53184238b63ab9"
+        },
+        "text": "Here's to new beginnings and better times"
+    },
+    {
+        "key_pair": {
+            "u1_shared_secret_key": "69dfa7aa3c22cef3eb0d39797ece27a7bcde8a03804955f3b6e9317ec83986fc",
+            "u2_shared_secret_key": "69dfa7aa3c22cef3eb0d39797ece27a7bcde8a03804955f3b6e9317ec83986fc"
+        },
+        "text": "Wishing you peaceful slumber and sweet dreams"
+    },
+    {
+        "key_pair": {
+            "u1_shared_secret_key": "4d6230babc4f08876d1dd47b57542829b793ab7f991f667d8e8089527a5ef04d",
+            "u2_shared_secret_key": "4d6230babc4f08876d1dd47b57542829b793ab7f991f667d8e8089527a5ef04d"
+        },
+        "text": "Today is a new day full of possibility"
+    },
+    {
+        "key_pair": {
+            "u1_shared_secret_key": "33d8f8e3fe716464716847a95c0429fcc510f5556d4e6955f8d42dee2098b20d",
+            "u2_shared_secret_key": "33d8f8e3fe716464716847a95c0429fcc510f5556d4e6955f8d42dee2098b20d"
+        },
+        "text": "This too shall pass, keep your head high"
+    },
+    {
+        "key_pair": {
+            "u1_shared_secret_key": "e8091db6f39d5e92fa41c3846550f3dfb566fb82e9b68b88646b61b655c18bbf",
+            "u2_shared_secret_key": "e8091db6f39d5e92fa41c3846550f3dfb566fb82e9b68b88646b61b655c18bbf"
+        },
+        "text": "Your kindness is strengthening, thank you"
+    },
+    {
+        "key_pair": {
+            "u1_shared_secret_key": "dad2dae999b40bfe4a60881771e87880511ddb0b6bbd503ddddbb4ae22b34ff1",
+            "u2_shared_secret_key": "dad2dae999b40bfe4a60881771e87880511ddb0b6bbd503ddddbb4ae22b34ff1"
+        },
+        "text": "Your friendship means so much, thanks for being here"
+    },
+    {
+        "key_pair": {
+            "u1_shared_secret_key": "f33f650e9f0b45bf23f417462da72548eab5c405740061a57723253675ade6fe",
+            "u2_shared_secret_key": "f33f650e9f0b45bf23f417462da72548eab5c405740061a57723253675ade6fe"
+        },
+        "text": "Here's to making the most of life each day"
+    },
+    {
+        "key_pair": {
+            "u1_shared_secret_key": "4a87810badac0f5ccae6c288d2c54cfdfb4d827ac50491a9772d9fa833efb0af",
+            "u2_shared_secret_key": "4a87810badac0f5ccae6c288d2c54cfdfb4d827ac50491a9772d9fa833efb0af"
+        },
+        "text": "May your days be filled with joy and wonder"
+    },
+    {
+        "key_pair": {
+            "u1_shared_secret_key": "e514349c310b2c04cace7be4e2180df315a54f05746527315222d2e602546f02",
+            "u2_shared_secret_key": "e514349c310b2c04cace7be4e2180df315a54f05746527315222d2e602546f02"
+        },
+        "text": "Wishing you a wonderful journey ahead"
+    },
+    {
+        "key_pair": {
+            "u1_shared_secret_key": "4aa85ad8be597c91e39b07a65e0e4c0bfcfaf52369ba5a8ea3f5e6586ca49597",
+            "u2_shared_secret_key": "4aa85ad8be597c91e39b07a65e0e4c0bfcfaf52369ba5a8ea3f5e6586ca49597"
+        },
+        "text": "Keep shining bright, the world needs your light"
+    },
+    {
+        "key_pair": {
+            "u1_shared_secret_key": "af864b235aa9fa58e997de0196377bd5436e9a09737321cd5a7085e464df3bca",
+            "u2_shared_secret_key": "af864b235aa9fa58e997de0196377bd5436e9a09737321cd5a7085e464df3bca"
+        },
+        "text": "Admire your strength and perseverance"
+    }
+]

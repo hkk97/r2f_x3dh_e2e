@@ -3,7 +3,7 @@
 
 // ignore_for_file: unused_import, unused_element, unnecessary_import, duplicate_ignore, invalid_use_of_internal_member, annotate_overrides, non_constant_identifier_names, curly_braces_in_flow_control_structures, prefer_const_literals_to_create_immutables
 
-import 'api/simple.dart';
+import 'api/rust_x3dh_e2e.dart';
 import 'dart:async';
 import 'dart:convert';
 import 'dart:ffi' as ffi;
@@ -22,7 +22,14 @@ abstract class RustLibApiImplPlatform extends BaseApiImpl<RustLibWire> {
   String dco_decode_String(dynamic raw);
 
   @protected
+  List<int> dco_decode_list_prim_u_8_loose(dynamic raw);
+
+  @protected
   Uint8List dco_decode_list_prim_u_8_strict(dynamic raw);
+
+  @protected
+  (Uint8List, Uint8List)
+      dco_decode_record_list_prim_u_8_strict_list_prim_u_8_strict(dynamic raw);
 
   @protected
   int dco_decode_u_8(dynamic raw);
@@ -34,7 +41,15 @@ abstract class RustLibApiImplPlatform extends BaseApiImpl<RustLibWire> {
   String sse_decode_String(SseDeserializer deserializer);
 
   @protected
+  List<int> sse_decode_list_prim_u_8_loose(SseDeserializer deserializer);
+
+  @protected
   Uint8List sse_decode_list_prim_u_8_strict(SseDeserializer deserializer);
+
+  @protected
+  (Uint8List, Uint8List)
+      sse_decode_record_list_prim_u_8_strict_list_prim_u_8_strict(
+          SseDeserializer deserializer);
 
   @protected
   int sse_decode_u_8(SseDeserializer deserializer);
@@ -54,11 +69,27 @@ abstract class RustLibApiImplPlatform extends BaseApiImpl<RustLibWire> {
   }
 
   @protected
+  ffi.Pointer<wire_cst_list_prim_u_8_loose> cst_encode_list_prim_u_8_loose(
+      List<int> raw) {
+    final ans = wire.cst_new_list_prim_u_8_loose(raw.length);
+    ans.ref.ptr.asTypedList(raw.length).setAll(0, raw);
+    return ans;
+  }
+
+  @protected
   ffi.Pointer<wire_cst_list_prim_u_8_strict> cst_encode_list_prim_u_8_strict(
       Uint8List raw) {
     final ans = wire.cst_new_list_prim_u_8_strict(raw.length);
     ans.ref.ptr.asTypedList(raw.length).setAll(0, raw);
     return ans;
+  }
+
+  @protected
+  void cst_api_fill_to_wire_record_list_prim_u_8_strict_list_prim_u_8_strict(
+      (Uint8List, Uint8List) apiObj,
+      wire_cst_record_list_prim_u_8_strict_list_prim_u_8_strict wireObj) {
+    wireObj.field0 = cst_encode_list_prim_u_8_strict(apiObj.$1);
+    wireObj.field1 = cst_encode_list_prim_u_8_strict(apiObj.$2);
   }
 
   @protected
@@ -71,8 +102,15 @@ abstract class RustLibApiImplPlatform extends BaseApiImpl<RustLibWire> {
   void sse_encode_String(String self, SseSerializer serializer);
 
   @protected
+  void sse_encode_list_prim_u_8_loose(List<int> self, SseSerializer serializer);
+
+  @protected
   void sse_encode_list_prim_u_8_strict(
       Uint8List self, SseSerializer serializer);
+
+  @protected
+  void sse_encode_record_list_prim_u_8_strict_list_prim_u_8_strict(
+      (Uint8List, Uint8List) self, SseSerializer serializer);
 
   @protected
   void sse_encode_u_8(int self, SseSerializer serializer);
@@ -135,22 +173,101 @@ class RustLibWire implements BaseWire {
   late final _dart_fn_deliver_output = _dart_fn_deliver_outputPtr
       .asFunction<void Function(int, ffi.Pointer<ffi.Uint8>, int, int)>();
 
-  WireSyncRust2DartDco wire_greet(
-    ffi.Pointer<wire_cst_list_prim_u_8_strict> name,
+  WireSyncRust2DartDco wire_decrypt_with_bytes_key(
+    ffi.Pointer<wire_cst_list_prim_u_8_loose> shared_secret_key,
+    ffi.Pointer<wire_cst_list_prim_u_8_loose> ciphertext,
+    ffi.Pointer<wire_cst_list_prim_u_8_loose> iv,
   ) {
-    return _wire_greet(
-      name,
+    return _wire_decrypt_with_bytes_key(
+      shared_secret_key,
+      ciphertext,
+      iv,
     );
   }
 
-  late final _wire_greetPtr = _lookup<
+  late final _wire_decrypt_with_bytes_keyPtr = _lookup<
           ffi.NativeFunction<
               WireSyncRust2DartDco Function(
+                  ffi.Pointer<wire_cst_list_prim_u_8_loose>,
+                  ffi.Pointer<wire_cst_list_prim_u_8_loose>,
+                  ffi.Pointer<wire_cst_list_prim_u_8_loose>)>>(
+      'frbgen_r2f_x3dh_e2e_wire_decrypt_with_bytes_key');
+  late final _wire_decrypt_with_bytes_key =
+      _wire_decrypt_with_bytes_keyPtr.asFunction<
+          WireSyncRust2DartDco Function(
+              ffi.Pointer<wire_cst_list_prim_u_8_loose>,
+              ffi.Pointer<wire_cst_list_prim_u_8_loose>,
+              ffi.Pointer<wire_cst_list_prim_u_8_loose>)>();
+
+  WireSyncRust2DartDco wire_decrypt_with_hex_string_key(
+    ffi.Pointer<wire_cst_list_prim_u_8_strict> shared_secret_key,
+    ffi.Pointer<wire_cst_list_prim_u_8_loose> ciphertext,
+    ffi.Pointer<wire_cst_list_prim_u_8_loose> iv,
+  ) {
+    return _wire_decrypt_with_hex_string_key(
+      shared_secret_key,
+      ciphertext,
+      iv,
+    );
+  }
+
+  late final _wire_decrypt_with_hex_string_keyPtr = _lookup<
+          ffi.NativeFunction<
+              WireSyncRust2DartDco Function(
+                  ffi.Pointer<wire_cst_list_prim_u_8_strict>,
+                  ffi.Pointer<wire_cst_list_prim_u_8_loose>,
+                  ffi.Pointer<wire_cst_list_prim_u_8_loose>)>>(
+      'frbgen_r2f_x3dh_e2e_wire_decrypt_with_hex_string_key');
+  late final _wire_decrypt_with_hex_string_key =
+      _wire_decrypt_with_hex_string_keyPtr.asFunction<
+          WireSyncRust2DartDco Function(
+              ffi.Pointer<wire_cst_list_prim_u_8_strict>,
+              ffi.Pointer<wire_cst_list_prim_u_8_loose>,
+              ffi.Pointer<wire_cst_list_prim_u_8_loose>)>();
+
+  WireSyncRust2DartDco wire_encrypt_with_bytes_key(
+    ffi.Pointer<wire_cst_list_prim_u_8_loose> shared_secret_key,
+    ffi.Pointer<wire_cst_list_prim_u_8_strict> plaintext,
+  ) {
+    return _wire_encrypt_with_bytes_key(
+      shared_secret_key,
+      plaintext,
+    );
+  }
+
+  late final _wire_encrypt_with_bytes_keyPtr = _lookup<
+          ffi.NativeFunction<
+              WireSyncRust2DartDco Function(
+                  ffi.Pointer<wire_cst_list_prim_u_8_loose>,
                   ffi.Pointer<wire_cst_list_prim_u_8_strict>)>>(
-      'frbgen_r2f_x3dh_e2e_wire_greet');
-  late final _wire_greet = _wire_greetPtr.asFunction<
-      WireSyncRust2DartDco Function(
-          ffi.Pointer<wire_cst_list_prim_u_8_strict>)>();
+      'frbgen_r2f_x3dh_e2e_wire_encrypt_with_bytes_key');
+  late final _wire_encrypt_with_bytes_key =
+      _wire_encrypt_with_bytes_keyPtr.asFunction<
+          WireSyncRust2DartDco Function(
+              ffi.Pointer<wire_cst_list_prim_u_8_loose>,
+              ffi.Pointer<wire_cst_list_prim_u_8_strict>)>();
+
+  WireSyncRust2DartDco wire_encrypt_with_hex_string_key(
+    ffi.Pointer<wire_cst_list_prim_u_8_strict> shared_secret_key,
+    ffi.Pointer<wire_cst_list_prim_u_8_strict> plaintext,
+  ) {
+    return _wire_encrypt_with_hex_string_key(
+      shared_secret_key,
+      plaintext,
+    );
+  }
+
+  late final _wire_encrypt_with_hex_string_keyPtr = _lookup<
+          ffi.NativeFunction<
+              WireSyncRust2DartDco Function(
+                  ffi.Pointer<wire_cst_list_prim_u_8_strict>,
+                  ffi.Pointer<wire_cst_list_prim_u_8_strict>)>>(
+      'frbgen_r2f_x3dh_e2e_wire_encrypt_with_hex_string_key');
+  late final _wire_encrypt_with_hex_string_key =
+      _wire_encrypt_with_hex_string_keyPtr.asFunction<
+          WireSyncRust2DartDco Function(
+              ffi.Pointer<wire_cst_list_prim_u_8_strict>,
+              ffi.Pointer<wire_cst_list_prim_u_8_strict>)>();
 
   void wire_init_app(
     int port_,
@@ -165,6 +282,21 @@ class RustLibWire implements BaseWire {
           'frbgen_r2f_x3dh_e2e_wire_init_app');
   late final _wire_init_app =
       _wire_init_appPtr.asFunction<void Function(int)>();
+
+  ffi.Pointer<wire_cst_list_prim_u_8_loose> cst_new_list_prim_u_8_loose(
+    int len,
+  ) {
+    return _cst_new_list_prim_u_8_loose(
+      len,
+    );
+  }
+
+  late final _cst_new_list_prim_u_8_loosePtr = _lookup<
+      ffi.NativeFunction<
+          ffi.Pointer<wire_cst_list_prim_u_8_loose> Function(
+              ffi.Int32)>>('frbgen_r2f_x3dh_e2e_cst_new_list_prim_u_8_loose');
+  late final _cst_new_list_prim_u_8_loose = _cst_new_list_prim_u_8_loosePtr
+      .asFunction<ffi.Pointer<wire_cst_list_prim_u_8_loose> Function(int)>();
 
   ffi.Pointer<wire_cst_list_prim_u_8_strict> cst_new_list_prim_u_8_strict(
     int len,
@@ -192,9 +324,23 @@ class RustLibWire implements BaseWire {
       _dummy_method_to_enforce_bundlingPtr.asFunction<int Function()>();
 }
 
+final class wire_cst_list_prim_u_8_loose extends ffi.Struct {
+  external ffi.Pointer<ffi.Uint8> ptr;
+
+  @ffi.Int32()
+  external int len;
+}
+
 final class wire_cst_list_prim_u_8_strict extends ffi.Struct {
   external ffi.Pointer<ffi.Uint8> ptr;
 
   @ffi.Int32()
   external int len;
+}
+
+final class wire_cst_record_list_prim_u_8_strict_list_prim_u_8_strict
+    extends ffi.Struct {
+  external ffi.Pointer<wire_cst_list_prim_u_8_strict> field0;
+
+  external ffi.Pointer<wire_cst_list_prim_u_8_strict> field1;
 }

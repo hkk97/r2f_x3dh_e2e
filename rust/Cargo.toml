@@ -1,5 +1,5 @@
 [package]
-name = "rust_lib"
+name = "rust_x3dh_e2e"
 version = "0.1.0"
 edition = "2021"
 
@@ -8,3 +8,7 @@ crate-type = ["cdylib", "staticlib"]
 
 [dependencies]
 flutter_rust_bridge = "=2.0.0-dev.16"
+aes-gcm = "0.10.3"
+hex = "0.4.3"
+rand = "0.8.5"
+lazy_static = "1.4"

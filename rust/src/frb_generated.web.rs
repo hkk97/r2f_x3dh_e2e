@@ -30,6 +30,20 @@ impl CstDecode<Vec<u8>> for Box<[u8]> {
         self.into_vec()
     }
 }
+impl CstDecode<(Vec<u8>, Vec<u8>)> for flutter_rust_bridge::for_generated::wasm_bindgen::JsValue {
+    fn cst_decode(self) -> (Vec<u8>, Vec<u8>) {
+        let self_ = self
+            .dyn_into::<flutter_rust_bridge::for_generated::js_sys::Array>()
+            .unwrap();
+        assert_eq!(
+            self_.length(),
+            2,
+            "Expected 2 elements, got {}",
+            self_.length()
+        );
+        (self_.get(0).cst_decode(), self_.get(1).cst_decode())
+    }
+}
 impl CstDecode<String> for flutter_rust_bridge::for_generated::wasm_bindgen::JsValue {
     fn cst_decode(self) -> String {
         self.as_string().expect("non-UTF-8 string, or not a string")
@@ -66,8 +80,37 @@ pub fn dart_fn_deliver_output(
 }
 
 #[wasm_bindgen]
-pub fn wire_greet(name: String) -> flutter_rust_bridge::for_generated::WireSyncRust2DartDco {
-    wire_greet_impl(name)
+pub fn wire_decrypt_with_bytes_key(
+    shared_secret_key: Box<[u8]>,
+    ciphertext: Box<[u8]>,
+    iv: Box<[u8]>,
+) -> flutter_rust_bridge::for_generated::WireSyncRust2DartDco {
+    wire_decrypt_with_bytes_key_impl(shared_secret_key, ciphertext, iv)
+}
+
+#[wasm_bindgen]
+pub fn wire_decrypt_with_hex_string_key(
+    shared_secret_key: String,
+    ciphertext: Box<[u8]>,
+    iv: Box<[u8]>,
+) -> flutter_rust_bridge::for_generated::WireSyncRust2DartDco {
+    wire_decrypt_with_hex_string_key_impl(shared_secret_key, ciphertext, iv)
+}
+
+#[wasm_bindgen]
+pub fn wire_encrypt_with_bytes_key(
+    shared_secret_key: Box<[u8]>,
+    plaintext: String,
+) -> flutter_rust_bridge::for_generated::WireSyncRust2DartDco {
+    wire_encrypt_with_bytes_key_impl(shared_secret_key, plaintext)
+}
+
+#[wasm_bindgen]
+pub fn wire_encrypt_with_hex_string_key(
+    shared_secret_key: String,
+    plaintext: String,
+) -> flutter_rust_bridge::for_generated::WireSyncRust2DartDco {
+    wire_encrypt_with_hex_string_key_impl(shared_secret_key, plaintext)
 }
 
 #[wasm_bindgen]

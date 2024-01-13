@@ -3,7 +3,7 @@
 
 // ignore_for_file: unused_import, unused_element, unnecessary_import, duplicate_ignore, invalid_use_of_internal_member, annotate_overrides, non_constant_identifier_names, curly_braces_in_flow_control_structures, prefer_const_literals_to_create_immutables
 
-import 'api/simple.dart';
+import 'api/rust_x3dh_e2e.dart';
 import 'dart:async';
 import 'dart:convert';
 import 'frb_generated.io.dart' if (dart.library.html) 'frb_generated.web.dart';
@@ -54,14 +54,34 @@ class RustLib extends BaseEntrypoint<RustLibApi, RustLibApiImpl, RustLibWire> {
 
   static const kDefaultExternalLibraryLoaderConfig =
       ExternalLibraryLoaderConfig(
-    stem: 'rust_lib',
+    stem: 'rust_x3dh_e2e',
     ioDirectory: 'rust/target/release/',
     webPrefix: 'pkg/',
   );
 }
 
 abstract class RustLibApi extends BaseApi {
-  String greet({required String name, dynamic hint});
+  String decryptWithBytesKey(
+      {required List<int> sharedSecretKey,
+      required List<int> ciphertext,
+      required List<int> iv,
+      dynamic hint});
+
+  String decryptWithHexStringKey(
+      {required String sharedSecretKey,
+      required List<int> ciphertext,
+      required List<int> iv,
+      dynamic hint});
+
+  (Uint8List, Uint8List) encryptWithBytesKey(
+      {required List<int> sharedSecretKey,
+      required String plaintext,
+      dynamic hint});
+
+  (Uint8List, Uint8List) encryptWithHexStringKey(
+      {required String sharedSecretKey,
+      required String plaintext,
+      dynamic hint});
 
   Future<void> initApp({dynamic hint});
 }
@@ -75,26 +95,117 @@ class RustLibApiImpl extends RustLibApiImplPlatform implements RustLibApi {
   });
 
   @override
-  String greet({required String name, dynamic hint}) {
+  String decryptWithBytesKey(
+      {required List<int> sharedSecretKey,
+      required List<int> ciphertext,
+      required List<int> iv,
+      dynamic hint}) {
     return handler.executeSync(SyncTask(
       callFfi: () {
-        var arg0 = cst_encode_String(name);
-        return wire.wire_greet(arg0);
+        var arg0 = cst_encode_list_prim_u_8_loose(sharedSecretKey);
+        var arg1 = cst_encode_list_prim_u_8_loose(ciphertext);
+        var arg2 = cst_encode_list_prim_u_8_loose(iv);
+        return wire.wire_decrypt_with_bytes_key(arg0, arg1, arg2);
       },
       codec: DcoCodec(
         decodeSuccessData: dco_decode_String,
         decodeErrorData: null,
       ),
-      constMeta: kGreetConstMeta,
-      argValues: [name],
+      constMeta: kDecryptWithBytesKeyConstMeta,
+      argValues: [sharedSecretKey, ciphertext, iv],
       apiImpl: this,
       hint: hint,
     ));
   }
 
-  TaskConstMeta get kGreetConstMeta => const TaskConstMeta(
-        debugName: "greet",
-        argNames: ["name"],
+  TaskConstMeta get kDecryptWithBytesKeyConstMeta => const TaskConstMeta(
+        debugName: "decrypt_with_bytes_key",
+        argNames: ["sharedSecretKey", "ciphertext", "iv"],
+      );
+
+  @override
+  String decryptWithHexStringKey(
+      {required String sharedSecretKey,
+      required List<int> ciphertext,
+      required List<int> iv,
+      dynamic hint}) {
+    return handler.executeSync(SyncTask(
+      callFfi: () {
+        var arg0 = cst_encode_String(sharedSecretKey);
+        var arg1 = cst_encode_list_prim_u_8_loose(ciphertext);
+        var arg2 = cst_encode_list_prim_u_8_loose(iv);
+        return wire.wire_decrypt_with_hex_string_key(arg0, arg1, arg2);
+      },
+      codec: DcoCodec(
+        decodeSuccessData: dco_decode_String,
+        decodeErrorData: null,
+      ),
+      constMeta: kDecryptWithHexStringKeyConstMeta,
+      argValues: [sharedSecretKey, ciphertext, iv],
+      apiImpl: this,
+      hint: hint,
+    ));
+  }
+
+  TaskConstMeta get kDecryptWithHexStringKeyConstMeta => const TaskConstMeta(
+        debugName: "decrypt_with_hex_string_key",
+        argNames: ["sharedSecretKey", "ciphertext", "iv"],
+      );
+
+  @override
+  (Uint8List, Uint8List) encryptWithBytesKey(
+      {required List<int> sharedSecretKey,
+      required String plaintext,
+      dynamic hint}) {
+    return handler.executeSync(SyncTask(
+      callFfi: () {
+        var arg0 = cst_encode_list_prim_u_8_loose(sharedSecretKey);
+        var arg1 = cst_encode_String(plaintext);
+        return wire.wire_encrypt_with_bytes_key(arg0, arg1);
+      },
+      codec: DcoCodec(
+        decodeSuccessData:
+            dco_decode_record_list_prim_u_8_strict_list_prim_u_8_strict,
+        decodeErrorData: null,
+      ),
+      constMeta: kEncryptWithBytesKeyConstMeta,
+      argValues: [sharedSecretKey, plaintext],
+      apiImpl: this,
+      hint: hint,
+    ));
+  }
+
+  TaskConstMeta get kEncryptWithBytesKeyConstMeta => const TaskConstMeta(
+        debugName: "encrypt_with_bytes_key",
+        argNames: ["sharedSecretKey", "plaintext"],
+      );
+
+  @override
+  (Uint8List, Uint8List) encryptWithHexStringKey(
+      {required String sharedSecretKey,
+      required String plaintext,
+      dynamic hint}) {
+    return handler.executeSync(SyncTask(
+      callFfi: () {
+        var arg0 = cst_encode_String(sharedSecretKey);
+        var arg1 = cst_encode_String(plaintext);
+        return wire.wire_encrypt_with_hex_string_key(arg0, arg1);
+      },
+      codec: DcoCodec(
+        decodeSuccessData:
+            dco_decode_record_list_prim_u_8_strict_list_prim_u_8_strict,
+        decodeErrorData: null,
+      ),
+      constMeta: kEncryptWithHexStringKeyConstMeta,
+      argValues: [sharedSecretKey, plaintext],
+      apiImpl: this,
+      hint: hint,
+    ));
+  }
+
+  TaskConstMeta get kEncryptWithHexStringKeyConstMeta => const TaskConstMeta(
+        debugName: "encrypt_with_hex_string_key",
+        argNames: ["sharedSecretKey", "plaintext"],
       );
 
   @override
@@ -125,8 +236,26 @@ class RustLibApiImpl extends RustLibApiImplPlatform implements RustLibApi {
   }
 
   @protected
+  List<int> dco_decode_list_prim_u_8_loose(dynamic raw) {
+    return raw as List<int>;
+  }
+
+  @protected
   Uint8List dco_decode_list_prim_u_8_strict(dynamic raw) {
     return raw as Uint8List;
+  }
+
+  @protected
+  (Uint8List, Uint8List)
+      dco_decode_record_list_prim_u_8_strict_list_prim_u_8_strict(dynamic raw) {
+    final arr = raw as List<dynamic>;
+    if (arr.length != 2) {
+      throw Exception('Expected 2 elements, got ${arr.length}');
+    }
+    return (
+      dco_decode_list_prim_u_8_strict(arr[0]),
+      dco_decode_list_prim_u_8_strict(arr[1]),
+    );
   }
 
   @protected
@@ -146,9 +275,24 @@ class RustLibApiImpl extends RustLibApiImplPlatform implements RustLibApi {
   }
 
   @protected
+  List<int> sse_decode_list_prim_u_8_loose(SseDeserializer deserializer) {
+    var len_ = sse_decode_i_32(deserializer);
+    return deserializer.buffer.getUint8List(len_);
+  }
+
+  @protected
   Uint8List sse_decode_list_prim_u_8_strict(SseDeserializer deserializer) {
     var len_ = sse_decode_i_32(deserializer);
     return deserializer.buffer.getUint8List(len_);
+  }
+
+  @protected
+  (Uint8List, Uint8List)
+      sse_decode_record_list_prim_u_8_strict_list_prim_u_8_strict(
+          SseDeserializer deserializer) {
+    var var_field0 = sse_decode_list_prim_u_8_strict(deserializer);
+    var var_field1 = sse_decode_list_prim_u_8_strict(deserializer);
+    return (var_field0, var_field1);
   }
 
   @protected
@@ -185,10 +329,25 @@ class RustLibApiImpl extends RustLibApiImplPlatform implements RustLibApi {
   }
 
   @protected
+  void sse_encode_list_prim_u_8_loose(
+      List<int> self, SseSerializer serializer) {
+    sse_encode_i_32(self.length, serializer);
+    serializer.buffer
+        .putUint8List(self is Uint8List ? self : Uint8List.fromList(self));
+  }
+
+  @protected
   void sse_encode_list_prim_u_8_strict(
       Uint8List self, SseSerializer serializer) {
     sse_encode_i_32(self.length, serializer);
     serializer.buffer.putUint8List(self);
+  }
+
+  @protected
+  void sse_encode_record_list_prim_u_8_strict_list_prim_u_8_strict(
+      (Uint8List, Uint8List) self, SseSerializer serializer) {
+    sse_encode_list_prim_u_8_strict(self.$1, serializer);
+    sse_encode_list_prim_u_8_strict(self.$2, serializer);
   }
 
   @protected
