@@ -13,20 +13,20 @@ Based on the performance tests conducted in profile mode, the Rust implementatio
 ### Comparison of CPU Profile
 | Profile Type | Image |
 |--------------|-------|
-| r2f_x3dh_e2e | ![Rust CPU Profile](demo/rust_to_flutter_cpu_profiler_res.png) |
-| dart_x3dh_e2e | ![Dart CPU Profile](demo/pure_dart_cpu_profile_res.png) |
+| r2f_x3dh_e2e | ![Rust CPU Profile](https://raw.githubusercontent.com/hkk97/r2f_x3dh_e2e/master/demo/rust_to_flutter_cpu_profiler_res.png) |
+| dart_x3dh_e2e | ![Dart CPU Profile](https://raw.githubusercontent.com/hkk97/r2f_x3dh_e2e/master/demo/pure_dart_cpu_profile_res.png) |
 
 ### Comparison of Performance
 | Profile Type | Image |
 |--------------|-------|
-| r2f_x3dh_e2e | ![Rust Performance](demo/rust_to_flutter_performance_res.gif) |
-| dart_x3dh_e2e | ![Dart Performance](demo/pure_dart_performance_res.gif) |
+| r2f_x3dh_e2e | ![Rust Performance](https://raw.githubusercontent.com/hkk97/r2f_x3dh_e2e/master/demo/rust_to_flutter_performance_res.gif) |
+| dart_x3dh_e2e | ![Dart Performance](https://raw.githubusercontent.com/hkk97/r2f_x3dh_e2e/master/demo/pure_dart_performance_res.gif) |
 
 ### Comparison of Memory
 | Profile Type | Image |
 |--------------|-------|
-| r2f_x3dh_e2e | ![Rust Memory](demo/rust_to_flutter_memory_res.gif) |
-| dart_x3dh_e2e | ![Dart Memory](demo/pure_dart_memory_res.gif) |
+| r2f_x3dh_e2e | ![Rust Memory](https://raw.githubusercontent.com/hkk97/r2f_x3dh_e2e/master/demo/rust_to_flutter_memory_res.gif) |
+| dart_x3dh_e2e | ![Dart Memory](https://raw.githubusercontent.com/hkk97/r2f_x3dh_e2e/master/demo/pure_dart_memory_res.gif) |
 
 ## Features
 
